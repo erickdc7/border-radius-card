@@ -30,15 +30,15 @@ img {
 .house-image::before,
 .house-image::after,
 .house-price::after {
-  --size: var(--_br);
+  --_size: var(--_br);
   content: "";
   position: absolute;
-  width: var(--size);
+  width: var(--_size);
   aspect-ratio: 1;
   background-image: radial-gradient(
     circle at 100% 100%,
-    transparent var(--size),
-    #fff var(--size)
+    transparent var(--_size),
+    var(--_corner-color, #fff) var(--_size)
   );
   rotate: -90deg;
 }
@@ -68,11 +68,11 @@ img {
 }
 
 .house-price::after {
+  --_corner-color: #000;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  background: red;
-  left: calc(var(--size) * -1);
-  bottom: calc(var(--size) * -1);
+  left: calc(var(--_size) * -1);
+  bottom: calc(var(--_size) * -1);
 }
 
 .house-price span {
