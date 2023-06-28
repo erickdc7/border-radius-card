@@ -38,7 +38,7 @@ img {
   background-image: radial-gradient(
     circle at 100% 100%,
     transparent var(--_size),
-    var(--_corner-color, #fff) var(--_size)
+    var(--_corner-color, #fff) calc(var(--_size) + 1px)
   );
   rotate: -90deg;
 }
@@ -59,7 +59,7 @@ img {
 }
 
 .house-price {
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   background: #000;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
@@ -68,11 +68,12 @@ img {
 }
 
 .house-price::after {
+  --_size: calc(var(--_br) * 1.5);
   --_corner-color: #000;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  left: calc(var(--_size) * -1);
-  bottom: calc(var(--_size) * -1);
+  left: -1rem;
+  bottom: -1rem;
 }
 
 .house-price span {
