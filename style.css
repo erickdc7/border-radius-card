@@ -28,7 +28,8 @@ img {
 }
 
 .house-image::before,
-.house-image::after {
+.house-image::after,
+.house-price::after {
   --size: var(--_br);
   content: "";
   position: absolute;
@@ -64,6 +65,14 @@ img {
   grid-column: 1 / 2;
   border-radius: var(--_br) var(--_br) 0 0;
   box-shadow: 0 1rem 0 #000, 0 0 0 1rem #fff;
+}
+
+.house-price::after {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background: red;
+  left: calc(var(--size) * -1);
+  bottom: calc(var(--size) * -1);
 }
 
 .house-price span {
