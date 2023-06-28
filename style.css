@@ -11,11 +11,16 @@
 }
 
 .house-price {
+  color: #fff;
+  background: #000;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
 }
 
 .house-meta {
+  margin: 0;
+  background: #000;
+  color: #fff;
   grid-row: 1 / 3;
   grid-column: 2 / 3;
 }
