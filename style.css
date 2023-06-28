@@ -19,6 +19,7 @@ img {
   grid-template-rows: 1fr auto 1fr;
   max-width: 25rem;
   position: relative;
+  margin: 0 auto;
 }
 
 .house-image {
@@ -61,11 +62,11 @@ img {
 
 .house-price {
   padding: 1rem 1rem 0 1rem;
-  background: #000;
+  background: #bf784e;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
   border-radius: var(--_br) var(--_br) 0 0;
-  box-shadow: 0 1rem 0 #000, 0 0 0 1rem #fff;
+  box-shadow: 0 1rem 0 #bf784e, 0 0 0 1rem #fff;
 }
 
 .house-image img {
@@ -76,7 +77,7 @@ img {
 
 .house-price::after {
   --_size: calc(var(--_br) * 1.5);
-  --_corner-color: #000;
+  --_corner-color: #bf784e;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   left: -1rem;
@@ -93,7 +94,7 @@ img {
 
 .house-meta {
   margin: 0;
-  background: #000;
+  background: #bf784e;
   color: #fff;
   grid-row: 3 / 4;
   grid-column: 1 / 3;
