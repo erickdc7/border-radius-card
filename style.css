@@ -29,6 +29,13 @@ img {
   grid-column: 1 / 2;
 }
 
+.house-price span {
+  display: grid;
+  place-items: center;
+  background: #fff;
+  padding: 0.75rem 0;
+}
+
 .house-meta {
   margin: 0;
   background: #000;
