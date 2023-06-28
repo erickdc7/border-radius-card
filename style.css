@@ -28,11 +28,11 @@ img {
 
 .house-price {
   padding: 1rem;
-  color: #fff;
   background: #d50707;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
   border-radius: var(--_br) var(--_br) 0 0;
+  box-shadow: 0 1rem 0 #000, 0 0 0 1rem #fff;
 }
 
 .house-price span {
@@ -40,6 +40,7 @@ img {
   place-items: center;
   background: #fff;
   padding: 0.75rem 0;
+  border-radius: calc(var(--_br) / 2);
 }
 
 .house-meta {
